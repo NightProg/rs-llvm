@@ -1,0 +1,41 @@
+[package]
+name = "rs-llvm"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+llvm-sys-40 = { package = "llvm-sys", version = "40.0.0", optional = true }
+llvm-sys-50 = { package = "llvm-sys", version = "50.0.0", optional = true }
+llvm-sys-60 = { package = "llvm-sys", version = "60.0.0", optional = true }
+llvm-sys-70 = { package = "llvm-sys", version = "70.0.0", optional = true }
+llvm-sys-80 = { package = "llvm-sys", version = "80.0.0", optional = true }
+llvm-sys-90 = { package = "llvm-sys", version = "90.0.0", optional = true }
+llvm-sys-100 = { package = "llvm-sys", version = "100.2.3", optional = true }
+llvm-sys-110 = { package = "llvm-sys", version = "110.0.0", optional = true }
+llvm-sys-120 = { package = "llvm-sys", version = "120.0.0", optional = true }
+llvm-sys-130 = { package = "llvm-sys", version = "130.0.0", optional = true }
+llvm-sys-140 = { package = "llvm-sys", version = "140.0.0", optional = true }
+llvm-sys-150 = { package = "llvm-sys", version = "150.0.0", optional = true }
+llvm-sys-160 = { package = "llvm-sys", version = "160.0.0", optional = true }
+llvm-sys-170 = { package = "llvm-sys", version = "170.0.0", optional = true }
+rs_llvm_macro = { path = "rs-llvm-macro" }
+
+[features]
+default = ["llvm-17"]
+llvm-4 = ["llvm-sys-40"]
+llvm-5 = ["llvm-sys-50"]
+llvm-6 = ["llvm-sys-60"]
+llvm-7 = ["llvm-sys-70"]
+llvm-8 = ["llvm-sys-80"]
+llvm-9 = ["llvm-sys-90"]
+llvm-10 = ["llvm-sys-100"]
+llvm-11 = ["llvm-sys-110"]
+llvm-12 = ["llvm-sys-120"]
+llvm-13 = ["llvm-sys-130"]
+llvm-14 = ["llvm-sys-140"]
+llvm-15 = ["llvm-sys-150"]
+llvm-16 = ["llvm-sys-160"]
+llvm-17 = ["llvm-sys-170"]
+
